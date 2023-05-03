@@ -15,8 +15,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/android-chrome-512x512.png">
     <link rel="manifest" href="./fav_index/android-chrome-512x512.png">
     
-    <!-- Link to CSS file -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css" />
     
     <!-- Title -->
     <title>Number Display Webpage, PHP</title>
