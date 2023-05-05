@@ -31,20 +31,20 @@
         echo "<p>This webpage will give you the range of numbers between the numbers you input.</p>";
       ?>
       <?php echo "<h3>Your Input:</h3>"; ?>
-      
-      <!-- Form for user input -->
-      <form action="./results.php" method="post" target="results">
-        <label for="min number">Enter a minimum number:</label>
-        <input type="number" step="1" name="min-number" placeholder="Minimum"><br><br>
-        <label for="max number">Enter a maximum number:</label>
-        <input type="number" step="1" name="max-number" placeholder="Maximum"><br><br>
-        <input type="submit" value="Submit Numbers" id="submit-button">
-      </form>
 
-      <!-- Iframe to display results -->
-      <iframe id="results" name="results"></iframe>
-
-      <!-- Image -->
-      <img src="./images/tomato-numbers.png" alt="Numbers" width="600" length="600">
+    <!-- Form for user input -->
+    <form action="./results.php" method="post" target="results">
+      <label for="min number">Enter a minimum number:</label>
+      <input type="number" step="1" name="min-number" placeholder="Minimum"><br><br>
+      <label for="max number">Enter a maximum number:</label>
+      <input type="number" step="1" name="max-number" placeholder="Maximum"><br><br>
+      <input type="submit" value="Submit Numbers" id="submit-button">
+    </form>
+    
+    <!-- Iframe to display results -->
+    <iframe id="results" name="results"></iframe>
+    
+    <!-- Image -->
+    <img src="./images/tomato-numbers.png" alt="Numbers" width="600" length="600">
   </body>
 </html>
