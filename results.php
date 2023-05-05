@@ -13,24 +13,28 @@ $counter = $minNumber;
 
 // If statement to ensure that maximum is greater than minumum.
 if ($minNumber > $maxNumber) {
-$message = "Ensure that minimum value is less than or equal to maximum value.";
+  $message = "Ensure that minimum value is less than or equal to maximum value.";
 }
-
+  
+//Elseif: if minimum or maximum is not entered
+else if ((empty($minNumber)) || (empty($maxNumber))){
+  $message = "Ensure that both minimum and maximum numbers are entered.";
+}
+  
 // Else, make list of numbers
 else {
-  
-// While loop that provides the range
-while (($counter >= $minNumber) && ($counter <= $maxNumber)) {
+  // While loop that provides the range
+  while (($counter >= $minNumber) && ($counter <= $maxNumber)) {
+    
+    // List of numbers with a break
+    $numbers = $numbers . $counter . "<br>";
 
-// List of numbers with a break
-$numbers = $numbers . $counter . "<br>";
+    // Give an increment for counter
+    $counter++;
 
-// Give an increment for counter
-$counter++;
-
-// Set the message variable to display results
-$message = "Here are all the numbers between the minimum and maximum numbers that you entered:<br><br>" . $numbers;
-}
+    // Set the message variable to display results
+    $message = "Here are all the numbers between the minimum and maximum numbers that you entered:<br><br>" . $numbers;
+  }
 }
 
 // Displaying the results (the range of numbers) back to the user
