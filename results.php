@@ -5,24 +5,24 @@ $numbers = "";
 $message = "";
 
 // Getting the minimum and maximum input 
-$minNumber = ($_POST["min-number"]);
-$maxNumber = ($_POST["max-number"]);
+$minNumber = $_POST["min-number"];
+$maxNumber = $_POST["max-number"];
 
-// Initializing counter
-$counter = $minNumber;
+// Check if minimum and maximum are entered and are numeric
+if (($minNumber == "") || ($maxNumber == "") || (!is_numeric($minNumber)) || (!is_numeric($maxNumber))) {
+  $message = "Ensure that both minimum and maximum numbers are entered.";
+} 
 
-// If statement to ensure that maximum is greater than minumum.
-if ($minNumber > $maxNumber) {
+// If statement to ensure that maximum is greater than minimum.
+elseif ($minNumber > $maxNumber) {
   $message = "Ensure that minimum value is less than or equal to maximum value.";
 }
-  
-//Elseif: if minimum or maximum is not entered
-else if (($minNumber=="" || $maxNumber=="") || ((is_nan($minNumber)) || (is_nan($maxNumber)))){
-  $message = "Ensure that both minimum and maximum numbers are entered.";
-}
-  
+
 // Else, make list of numbers
 else {
+  // Initializing counter as an integer
+  $counter = (int) $minNumber;
+
   // While loop that provides the range
   while (($counter >= $minNumber) && ($counter <= $maxNumber)) {
     
