@@ -4,7 +4,7 @@
 $numbers = "";
 $message = "";
 
-// Getting the minimum and maxiumum input 
+// Getting the minimum and maximum input 
 $minNumber = ($_POST["min-number"]);
 $maxNumber = ($_POST["max-number"]);
 
