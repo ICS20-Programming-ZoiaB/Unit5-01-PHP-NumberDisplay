@@ -17,7 +17,7 @@ if ($minNumber > $maxNumber) {
 }
   
 //Elseif: if minimum or maximum is not entered
-else if ((empty($minNumber)) || (empty($maxNumber))){
+else if ((is_nan($minNumber)) || (is_nan($maxNumber))){
   $message = "Ensure that both minimum and maximum numbers are entered.";
 }
   
