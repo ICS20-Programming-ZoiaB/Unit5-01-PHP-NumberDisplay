@@ -5,8 +5,8 @@ $numbers = "";
 $message = "";
 
 // Getting the minimum and maxiumum input 
-$minNumber = intval($_POST["min-number"]);
-$maxNumber = intval($_POST["max-number"]);
+$minNumber = ($_POST["min-number"]);
+$maxNumber = ($_POST["max-number"]);
 
 // Initializing counter
 $counter = $minNumber;
@@ -17,7 +17,7 @@ if ($minNumber > $maxNumber) {
 }
   
 //Elseif: if minimum or maximum is not entered
-else if ((is_nan($minNumber)) || (is_nan($maxNumber))){
+else if (($minNumber=="" || $maxNumber=="") || ((is_nan($minNumber)) || (is_nan($maxNumber)))){
   $message = "Ensure that both minimum and maximum numbers are entered.";
 }
   
