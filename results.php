@@ -8,10 +8,10 @@ $message = "";
 $minNumber = $_POST["min-number"];
 $maxNumber = $_POST["max-number"];
 
-// Check if minimum and maximum are entered and are numeric
+// Check if minimum and maximum are entered and are numbers
 if (($minNumber == "") || ($maxNumber == "") || (!is_numeric($minNumber)) || (!is_numeric($maxNumber))) {
   $message = "Ensure that both minimum and maximum numbers are entered.";
-} 
+}
 
 // If statement to ensure that maximum is greater than minimum.
 elseif ($minNumber > $maxNumber) {
@@ -23,7 +23,7 @@ else {
   // Initializing counter as an integer
   $counter = (int) $minNumber;
 
-  // While loop that provides the range
+  // While loop providing the range
   while (($counter >= $minNumber) && ($counter <= $maxNumber)) {
     
     // List of numbers with a break

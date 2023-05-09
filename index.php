@@ -9,7 +9,7 @@
     <meta name="author" content="ZoiaB">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Code for the favicon -->
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/android-chrome-512x512.png">
@@ -26,11 +26,11 @@
     <?php echo "<h1>Number Display Webpage, PHP</h1>"; ?>
     
     <!-- Header and text -->
-      <?php
-        echo "<h3>Welcome!</h3>";
-        echo "<p>This webpage will give you the range of numbers between the numbers you input.</p>";
-      ?>
-      <?php echo "<h3>Your Input:</h3>"; ?>
+    <?php
+      echo "<h3>Welcome!</h3>";
+      echo "<p>This webpage will give you the range of numbers between the numbers you input.</p>";
+    ?>
+    <?php echo "<h3>Your Input:</h3>"; ?>
 
     <!-- Form for user input -->
     <form action="./results.php" method="post" target="results">
